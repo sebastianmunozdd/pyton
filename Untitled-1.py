@@ -1,13 +1,10 @@
-# Ejemplo 2.4: Calcular la nota definitiva de un estudiante
+n = int(input("Ingrese un número entero: "))
+invertido = 0
+original = n
 
-# Entrada de datos
-nota1 = float(input("Ingrese la primera nota: "))
-nota2 = float(input("Ingrese la segunda nota: "))
-nota3 = float(input("Ingrese la tercera nota: "))
-nota4 = float(input("Ingrese la cuarta nota: "))
+while n != 0:
+    digito = n % 10
+    invertido = invertido * 10 + digito
+    n = n // 10
 
-# Proceso: Calcular la media aritmética
-nota_definitiva = (nota1 + nota2 + nota3 + nota4) / 4
-
-# Salida de datos
-print(f"\nLa nota definitiva del estudiante es: {nota_definitiva:.2f}")
+print(f"El número invertido de {original} es: {invertido}")
