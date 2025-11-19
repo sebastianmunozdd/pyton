@@ -1,6 +1,8 @@
-x=5
-while x > 0:
 
-    x-=1
+x= int(input("Introduce un numero"))
 
-    print(x)
+
+print("es 5" if x == 5 else " no es 5")
+
+# es 5
+
